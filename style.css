@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(23, 35, 161);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======Header====== */
+.header {
+    background-color: rgb(13, 21, 108);
+    text-align: center;
+    padding: 1px;
+    border-radius: 0 0 20px 20px;
+    font-size: 13px;
+}
+
+/* =====Carde principal====== */
+.card-main {
+    margin-top: 30px;
+    background-color: rgb(13, 21, 108);
+    border: 3px solid gray;
+    border-radius: 15px;
+    width: 640px;
+
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.titulo-video {
+    text-align: center;
+}
+
+.video-principal {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+}
+
+/* =====control style===== */
+.controle {
+    padding: 2px;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.584);
+
+}
+
+.btn {
+    width: 38px;
+    background-color: rgba(120, 120, 120, 0.715);
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0px 2px 0px 2px;
+}
+
+.btn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.input {
+    width: 20%;
+    transform: translateY(50%);
+}
+
+/* =====Lista de vídeos===== */
+.card-list {
+
+    border-radius: 15px;
+    margin-top: 30px;
+    text-align: center;
+    width: 60%;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card-list-sobre {
+    background-color: rgb(13, 21, 108);
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.card-list-sobre>p{
+    padding: 5px;
+}
+
+.card-list-item {
+    background-color: rgb(13, 21, 108);
+    margin: 10px 0px 10px 0px;
+    border: 3px solid gray;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+}
+
+.card-list-item:hover {
+    box-shadow: white 0px 0px 15px;
+}
+
+.img-list {
+    margin-top: 15px;
+    width: 95%;
+}
+
+/* =====Footer===== */
+.footer {
+    margin-top: 35px;
+    text-align: center;
+    background-color: rgb(13, 21, 108);
+    padding: 5px 12px 5px 12px;
+    border-radius: 20px 20px 0px 0px;
+    font-size: 21px;
+}
+
+.logo{
+    width: 30px;
+    position: relative;
+    top: 8px;
+}
+
+.footer>h6 {
+    color: rgb(255, 255, 255);
+    margin: 5px 0px 5px 0px;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+}
+
+/* ------------- Media queries ----------------- */
+
+/* ======Media-Dekstops====== */
+@media screen and (min-width: 850px) {
+
+    /* =====Lista de vídeos===== */
+    .card-list {
+        width: 60%;
+    }
+
+    .card-list-item {
+        width: 60%;
+    }
+}
+
+
+
+/* ======Media-Tablets====== */
+@media screen and (max-width: 700px) {
+
+    /* =====Carde principal===== */
+    .card-main {
+        width: 360px;
+    }
+
+    /* =====control style===== */
+    .controle {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+    }
+
+    .btn {
+        width: 28px;
+        background-color: rgba(120, 120, 120, 0.715);
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0px 3px 0px 3px;
+    }
+
+    .input {
+        width: 20%;
+        transform: translateY(30%);
+    }
+
+    /* =====Lista de vídeos===== */
+    .card-list {
+        width: 60%;
+    }
+
+    .card-list-item {
+        width: 80%;
+    }
+
+    .card-list-item>h4 {
+        font-size: 13px;
+    }
+}
+
+
+
+/* ====== Media-Phone ====== */
+@media screen and (max-width: 450px) {
+
+    .header {
+        font-size: 9px;
+    }
+
+    /* =====Carde principal====== */
+    .card-main {
+        width: 90%;
+    }
+
+    /* =====control style===== */
+    .controle {
+        position: absolute;
+        top: 84%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 90%;
+    }
+
+    .btn {
+        width: 10%;
+    }
+
+    .input {
+        width: 20%;
+        transform: translateY(30%);
+    }
+
+    /* =====Lista de vídeos===== */
+    .card-list {
+        width: 90%;
+    }
+
+    .card-list-item {
+        width: 70%;
+    }
+
+    .card-list-item>h4 {
+        font-size: 11px;
+    }
+
+    /* ====== footer ====== */
+    .footer{
+        font-size: 18px;
+    }
+}
