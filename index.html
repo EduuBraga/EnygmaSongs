@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js" defer></script>
+    <script src="./Js/index.js" defer></script>
     <title>Enygma Music</title>
 </head>
 
@@ -19,14 +19,17 @@
     <section class="card-main">
 
         <section class="titulo-video">
-            <p>O Monstro Sem Nome - Johan Liebert</p>
+
         </section>
 
-        <video class="video-principal" poster="./imagens/johan-liebert.jpg"
-            src="./videos/O Monstro Sem Nome-Johan Liebert.mp4">
+        <video class="video-principal">
+
         </video>
 
         <section class="controle">
+            <section>
+                <input id="progresso" type="range" min="0" max="" step="1">
+            </section>
             <img class="btn fl" src="./icons/play.PNG" alt="Botão de play">
             <img class="btn fl" src="./icons/retroceder.PNG" alt="Botão de retroceder">
             <img class="btn fl" src="./icons/avancar.PNG" alt="Botão de avançar">
@@ -43,39 +46,14 @@
     </section>
 
     <section class="card-list">
-        
-
-        <section class="card-list-item">
-            <img class="img-list" src="./imagens/johan-liebert.jpg" alt="Thumb-Johan-liebert">
-            <h4>O Mostro Sem Nome - Johan Liebert</h4>
-        </section>
-
-        <section class="card-list-item">
-            <img class="img-list" src="./imagens/adão.jpg" alt="Thumb-Adão">
-            <h4>Pai da Humanidade - Adão</h4>
-        </section>
-
-        <section class="card-list-item">
-            <img class="img-list" src="./imagens/chrollo.jpg" alt="thumb-chrollo">
-            <h4>O Sol e a Lua - Chrollo</h4>
-        </section>
-
-        <section class="card-list-item">
-            <img class="img-list" src="./imagens/zenitsu.jpg" alt="Thumb-Zenitsu">
-            <h4>Hakireki Issen - Zenitsu</h4>
-        </section>
-
-        <section class="card-list-item">
-            <img class="img-list" src="./imagens/overhaul.jpg" alt="Thumb-Overhaul">
-            <h4>Revisão - overhaul</h4>
-        </section>
 
     </section>
 
     <footer class="footer">
         <h6>developed by <a class="link" target="_blank" href="https://www.linkedin.com/in/eduardo-braga-aa0aa922b/">Eduardo Braga</a>.<img class="logo" src="icons/logoLinkedin.png" alt="Logo do Linkedin"> </h6>
     </footer>
-
+    <script src="./js/videos.js"></script>
+    <script src="./js/player.js"></script>
 </body>
 
 </html>
