@@ -5,7 +5,7 @@ window.player = {
     video: document.querySelector(".video-principal"),
     arquivoVideos: videos,
     videoAtual: {},
-    videoContagem: 2,
+    videoContagem: 0,
     start() {
         player.videoAtual = player.arquivoVideos[player.videoContagem]
 
@@ -26,10 +26,6 @@ window.player = {
         botoes.progresso.max = player.video.duration
         botoes.btnPP.setAttribute("src", "./icons/play.PNG")
     }
-    ,
-    // recomecar(){
-    //     if(player.audioContagem > player.arquivoVideos)
-    // }
 }
 
 // =========Objeto Botões==========
@@ -100,27 +96,23 @@ window.botoes = {
         botoes.progresso.value = player.video.currentTime
         botoes.progresso.max = player.video.duration
     }
-
 }
 
 window.playlist = {
-    cardList: document.querySelector(".card-list"),
-    imagem: document.getElementsByClassName("img-list")
+    containerPlaylist: document.querySelector(".container-list"),
+    itemCardPlaylist: document.getElementsByClassName("card-list-item")
 }
 
 for (let i = 0; player.arquivoVideos.length > i; i++) {
-    playlist.cardList.innerHTML += `
-    <section class="card-list-item">
+    playlist.containerPlaylist.innerHTML += `
+    <div class="card-list-item">
         <img class="img-list" src="${player.arquivoVideos[i].thumb}" alt="${player.arquivoVideos[i].alt}">
         <h4>${player.arquivoVideos[i].titulo}</h4>
-    </section>
-    `
-
+    </div>`
 }
 
 for (let i = 0; player.arquivoVideos.length > i; i++) {
-    playlist.imagem[i].addEventListener('click', function () {
-
+    playlist.itemCardPlaylist[i].addEventListener('click', function () {
         player.titleVideo.innerHTML = `<p>${player.arquivoVideos[i].titulo}</p>`
         player.video.setAttribute("src", player.arquivoVideos[i].video)
         player.video.setAttribute("poster", player.arquivoVideos[i].thumb)
