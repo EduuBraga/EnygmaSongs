@@ -7,6 +7,7 @@ player.view.addEventListener("mouseleave", botoes.ocultar)
 
 // Play e Pause
 botoes.btnPP.addEventListener("click", botoes.PlayPause)
+player.video.addEventListener('click', botoes.PlayPause)
 
 // Avançar e retroceder o percusso do vídeo
 botoes.btnRetroceder.addEventListener("click", botoes.Avancar)
